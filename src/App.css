@@ -1,0 +1,275 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.siteheader {
+  background-color: #0184ff;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 15px 30px;
+  box-sizing: border-box;
+}
+
+.main-menu li {
+  display: inline-block;
+}
+.main-menu a {
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.main-menu .addOp {
+  background-color: #0184ff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.main-menu .addOp svg {
+  margin-left: 10px;
+}
+
+.main-menu a.active {
+  color: #6fc4ed;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 100;
+  text-align: center;
+  /* margin-bottom: 50px; */
+  text-transform: uppercase;
+  /* margin-top: 50px; */
+  margin: 50px auto;
+}
+
+.form-section {
+  margin-bottom: 50px;
+}
+
+.cardlist {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  overflow: hidden;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  box-sizing: border-box;
+}
+.cardlist .card {
+  width: 23.5%;
+  box-sizing: border-box;
+  min-height: 300px;
+  margin: 0 0 20px 0;
+  position: relative;
+  color: #fff;
+}
+.cardlist .details {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  text-align: left;
+  padding: 15px 15px 45px 15px;
+  box-sizing: border-box;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8) 80%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.cardlist .details h2 {
+  font-size: 20px;
+}
+
+.cardlist .details .metadata {
+  margin: 10px 0;
+}
+.cardlist .card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.cardlist .card .metadata ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* button.MuiButtonBase-root {
+  color: #FFF;
+} */
+
+.descToggle svg,
+.icons svg,
+.descToggle {
+  color: #fff;
+}
+
+button span {
+  font-size: 22px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.rating span {
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffb101;
+}
+
+.forms {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 20px auto;
+  column-gap: 20px;
+
+  /* display: grid;
+    justify-content: space-between;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    align-content: center; */
+}
+
+/* .forms input{
+  width: 50%;
+} */
+
+.movie-list {
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: 50% 50%;
+}
+
+.movie-list-item {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: flex-start;
+  /* width: 100%; */
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.movie-list-item img {
+  width: 100px;
+}
+
+.movie-list-item .movie-details {
+  color: #000;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.movie-list-item .movie-details h2 {
+  margin: 0 0 20px 0;
+}
+
+.movie-list-item .movie-details p {
+  margin: 20px 0 0 0;
+}
+
+.movie-list-item .movie-details ul {
+  padding: 0;
+  list-style: none;
+}
+
+.movie-list-item .movie-details ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.crud-ops {
+  display: flex;
+  justify-content: space-between;
+}
+
+.see-details.MuiButton-root {
+  width: 100%;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.MuiAppBar-root {
+  min-height: 40px;
+}
+
+.MovieDetails {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  margin: 30px auto;
+  column-gap: 20px;
+}
+.MovieDetails .sidebar {
+  width: 20%;
+}
+.MovieDetails .sidebar img {
+  width: 100%;
+}
+.MovieDetails .maincontent {
+  width: 80%;
+}
+.MovieDetails .movieheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .movie-list {
+    grid-template-columns: 100%;
+  }
+  .movie-list-item {
+    width: 100%;
+  }
+  .cardlist {
+    padding: 0 15px;
+  }
+  .cardlist .card {
+    width: 100%;
+  }
+
+  .forms {
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .movie-list {
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    column-gap: 20px;
+  }
+  .movie-list-item {
+    width: 100%;
+  }
+}
